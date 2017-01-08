@@ -1,0 +1,31 @@
+{
+  "dnsrbls": [
+    "sbl-xbl.spamhaus.org",
+    "bl.spamcop.net",
+    "dnsbl-1.uceprotect.net",
+    "dnsbl-2.uceprotect.net",
+    "dnsbl-3.uceprotect.net",
+    "zen.spamhaus.org",
+    "bl.emailbasura.org",
+    "blacklist.woody.ch",
+    "cbl.abuseat.org",
+    "cdl.anti-spam.org.cn",
+    "db.wpbl.info",
+    "dnsbl.inps.de",
+    "duinv.aupads.org",
+    "dul.ru",
+    "dyna.spamrats.com",
+    "ips.backscatterer.org",
+    "ix.dnsbl.manitu.net",
+    "korea.services.net",
+    "noptr.spamrats.com",
+    "orvedb.aupads.org",
+    "pbl.spamhaus.org",
+    "rbl.interserver.net",
+    "sbl.spamhaus.org",
+    "spam.spamrats.com",
+    "blacklist.lashback.com",
+    "xbl.spamhaus.org",
+    "virbl.bit.nl"
+  ]
+}
