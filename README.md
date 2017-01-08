@@ -1,4 +1,6 @@
-# RBL Checker
+[![Build Status](https://travis-ci.org/edusalguero/rbl-checker.svg?branch=master)](https://travis-ci.org/edusalguero/rbl-checker)
+
+ # RBL Checker
 
 RblChekcer is a simple PHP library to check IP against SPAM list.
  
