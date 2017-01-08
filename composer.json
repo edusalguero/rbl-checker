@@ -1,0 +1,24 @@
+{
+    "name": "edusalguero/rbl-checker",
+    "description": "A PHP library to check IP against SPAM list (DNSRbl by default)",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "edusalguero",
+            "email": "edusalguero@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "EduSalguero\\RblChecker\\": "src",
+            "EduSalguero\\RblChecker\\Test\\": "test"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.7"
+    },
+    "require": {
+        "mikey179/vfsStream": "^1.6"
+    }
+}

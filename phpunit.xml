@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/5.7/phpunit.xsd"
+         bootstrap="vendor/autoload.php"
+         backupGlobals="false"
+         beStrictAboutCoversAnnotation="true"
+         beStrictAboutOutputDuringTests="true"
+         beStrictAboutTestsThatDoNotTestAnything="true"
+         beStrictAboutTodoAnnotatedTests="true"
+         verbose="true">
+    <testsuite>
+        <directory suffix="Test.php">tests</directory>
+    </testsuite>
+
+    <filter>
+        <whitelist processUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">src</directory>
+        </whitelist>
+    </filter>
+    <logging>
+        <log type="coverage-text" target="php://stdout"/>
+        <log type="coverage-html" target="./tests-reports/coverage/html"/>
+        <log type="coverage-clover" target="./tests-reports/coverage/clover/coverage.xml"/>
+        <!--<log type="coverage-php" target="./tests-reports/coverage/serilized/coverage.serialized"/>-->
+        <log type="json" target="./tests-reports/logs/logfile.json"/>
+        <log type="tap" target="./tests-reports/logs/logfile.tap"/>
+        <log type="junit" target="./tests-reports/logs/logfile.xml" logIncompleteSkipped="false"/>
+        <log type="testdox-html" target="./tests-reports/dox/testdox.html"/>
+        <log type="testdox-text" target="./tests-reports/dox/testdox.txt"/>
+    </logging>
+</phpunit>
