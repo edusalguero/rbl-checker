@@ -15,5 +15,9 @@ $configPath = __DIR__.'/config/config.json';
 
 $ip='107.180.4.167';
 $checker = \EduSalguero\RblChecker\DnsRblCheckerFacade::create($ip,$configPath);
-printf('Blacklisted: %s',$checker->blacklisted()? "true" : "false");
+$blacklisted = $checker->blacklisted();
+printf('Blacklisted: %s',$blacklisted ? "true" : "false");
 
+if($blacklisted){
+    echo "\n Blacklisted on: ".$checker->getDNSBLDomainName();
+}
