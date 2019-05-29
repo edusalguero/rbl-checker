@@ -6,7 +6,7 @@ Rbl Checker is a simple PHP library to check IP against SPAM list.
  
 The Facade use the DNS Rbl queryfier to check ips. Currently the library provide a list with 29 DNS Rbl hosts.
 
-More info about DNSRBL in [Wikipedia] (https://en.wikipedia.org/wiki/DNSBL)
+More info about DNSRBL in [Wikipedia](https://en.wikipedia.org/wiki/DNSBL)
 
 ## Usage
 ```php
