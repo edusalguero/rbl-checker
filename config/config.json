@@ -26,6 +26,7 @@
     "spam.spamrats.com",
     "blacklist.lashback.com",
     "xbl.spamhaus.org",
-    "virbl.bit.nl"
+    "virbl.bit.nl",
+    "rbl.megarbl.net"
   ]
 }
