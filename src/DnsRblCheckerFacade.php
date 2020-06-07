@@ -57,6 +57,16 @@ class DnsRblCheckerFacade
     }
 
     /**
+     *@return bool|string
+     */
+    public function getDNSBLDomainName()
+    {
+        return $this->checker->getDNSBLDomainName();
+    }
+
+
+
+    /**
      * @return Check\Response\Collection
      */
     public function checks()

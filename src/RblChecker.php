@@ -15,6 +15,7 @@ class RblChecker
     protected $ip;
     protected $checkers;
     protected $checkResponseCollection;
+    public    $DNSBLDomainName = false;  
     /**
      * @var QueryfierInterface
      */
@@ -92,11 +93,20 @@ class RblChecker
             if($response->isBlacklisted())
             {
                 $isBlacklisted = true;
+                $this->DNSBLDomainName = $response->dnsrblDomainName();
             }
             $this->checkResponseCollection->add($response);
         }
 
         return $isBlacklisted;
+    }
+
+    /**
+     *@return bool|string
+     */
+    public function getDNSBLDomainName()
+    {
+        return $this->DNSBLDomainName;
     }
 
 }
